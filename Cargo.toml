@@ -1,0 +1,28 @@
+[package]
+name = "boost_statechart"
+description = "Boost C++ library boost_statechart packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_statechart"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_statechart"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_bind = { version = "0.1.0", path = "../boost_bind" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_conversion = { version = "0.1.0", path = "../boost_conversion" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_detail = { version = "0.1.0", path = "../boost_detail" }
+boost_function = { version = "0.1.0", path = "../boost_function" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_thread = { version = "0.1.0", path = "../boost_thread" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
